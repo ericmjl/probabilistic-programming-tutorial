@@ -2,11 +2,11 @@
 
 ## Description
 
-This tutorial will guide you through use cases on how to use probabilistic programming in your projects. Through the use of simplified complex examples, you will see how to perform parameter estimation, case/control analysis, hierarchical modelling, and regression analysis. Theory, where appropriate, will be introduced, but is not the focus of the tutorial. There will be multiple structured examples available.
+This tutorial will provide an example-driven introduction on how to use probabilistic programming. Through the use of real-world examples, you will see how to perform parameter estimation, case/control analysis, hierarchical modelling, and regression analysis. Theory will be introduced where appropriate, but is not the focus of the tutorial. Multiple structured examples will motivate learning.
 
 ## Audience
 
-If you encounter modelling problems at work and your current toolkit does not allow you to quantitatively describe the uncertainty in your predictions, then this tutorial is for you. We assume intermediate Python proficiency, including the use of context managers, Python objects and their methods, and an ability to read code library documentation. We also assume basic statistics knowledge (e.g. definitions of central tendency and variance measures). If you've ever done the t-test and know what a Gaussian distribution looks like, you'll be covered for stats background. By the end of the tutorial, you should be able to describe your modelling problem using probability distributions, and be equipped with the necessary syntax to follow through on modelling.
+If you feel limited by your current toolkit or analytic workflow, in terms of being able to express and solve modeling problems and account for statistical uncertainty, then this tutorial is for you. We assume intermediate Python proficiency, including the use of context managers, Python objects and their methods, and the ability to read code documentation. We also assume some knowledge of introductory statistica (_e.g._ definitions of central tendency and variance measures). If you've ever performed a t-test and know what a Gaussian distribution looks like, you have all the background you need. By the end of the tutorial, you will be able to describe a  problem as a probabilistic model, and and fit that model using PyMC3.
 
 ## Outline
 
@@ -17,28 +17,28 @@ If you encounter modelling problems at work and your current toolkit does not al
         1. Distribution library
         1. Syntax
         1. Sampling algorithms <-- fancy math for lazy programmers (and the algebra-blind)!
-    1. Where do you **not** want to deploy a Bayesian model? (e.g. real-time decision systems where the value of uncertainty is very low)
-1. Parameter Estimation (30 min)
-    1. Worked example (10 min) (coin flip)
-    1. Hands-on coding (15 min)
+    1. Where Bayesian models are (and are not useful?
+1. Comparing two groups with binary outcomes (30 min)
+    1. Worked example: Coin flip (10 min)
+    1. Hands-on coding: Sepsis deaths (15 min)
     1. Discussion/questions (5 min)
 1. Break (5 min)
-1. Case/Control Analysis (40 min)
-    1. Worked example (10 min)
-    1. Hands-on coding (20 min)
+1. Comparing two groups with continuous outcomes (40 min)
+    1. Worked example: IQ drug (10 min)
+    1. Hands-on coding: Radon contamination (20 min)
     1. Discussion/questions (5 min)
         1. NTS: someone might ask about comparison to t-test.
 1. Break (10 min)
-1. Hierarchical Modelling (40 min)
-    1. Rationale (5 min)
-    1. Worked example (10 min)
-    1. Hands-on coding (20 min)
+2. Regression Analysis (40 min)
+    1. Problem class description (given Xs, predict Y, but now with uncertainty) (5 min)
+    1. Worked example: Low birthweight infants (10 min)
+    1. Hands-on coding: Sepsis deaths (20 min)
     1. Discussion/questions (5 min)
 1. Break (5 min)
-1. Regression Problems (40 min)
-    1. Problem class description (given Xs, predict Y, but now with uncertainty) (5 min)
-    1. Worked example (10 min)
-    1. Hands-on coding (20 min)
+1. Hierarchical Modelling (40 min)
+    1. Rationale (5 min)
+    1. Worked example: School test performance (10 min)
+    1. Hands-on coding: Radon contamination (20 min)
     1. Discussion/questions (5 min)
 1. End
 
